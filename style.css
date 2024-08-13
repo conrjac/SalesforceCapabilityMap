@@ -5,13 +5,30 @@ body {
 }
 
 p {
-    font-size: 12px;
+    font-size: 11px;
     margin: 0;
 }
 
 h1 {
-    font-size: 18px;
-    margin: 0;
+    font-size: 14px;
+}
+
+.header {
+    margin: 10px;
+}
+
+.header>h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer {
+    margin: 10px;
+}
+
+.footer>p {
+    font-size: 9px;
+    text-align: center;
 }
 
 .maincontainer {
@@ -23,20 +40,31 @@ h1 {
         'marketing salesandecommerce service engagement analytics appsecosystem support'
         'platform platform platform platform platform platform platform'
         'itegration itegration itegration itegration itegration itegration itegration';
-    gap: 10px;
+    gap: 20px;
     padding: 5px;
+    margin: 20px;
 }
 
 .subcontainer {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 5px;
-    text-align: center;
     border-radius: 3px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px 0px;
 }
 
+.subcontainer>h1 {
+    text-align: center;
+    margin-top: -40px;
+}
+
 .subcontainer>img {
-    height: 25px;
+    height: 40px;
+    position: relative;
+    display: inline;
+    top: -20px;
+    left: -20px;
+    bottom: -40px;
+    text-align: left;
 }
 
 .fullwidth {

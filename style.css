@@ -1,33 +1,33 @@
-body{
+body {
     background: #f3f3f3;
     display: grid;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
-p{
+p {
     font-size: 12px;
     margin: 0;
 }
 
-h1{
+h1 {
     font-size: 18px;
     margin: 0;
 }
 
-.maincontainer{
+.maincontainer {
     display: grid;
     /* grid-template-columns: auto auto auto auto auto;*/
     grid-template-areas:
-    'channels channels channels channels channels channels channels channels'
-    'aiandiot aiandiot aiandiot aiandiot aiandiot aiandiot aiandiot aiandiot'
-    'marketing salesandecommerce service engagement analytics appsecosystem support communitysupport'
-    'platform platform platform platform platform platform platform platform'
-    'itegration itegration itegration itegration itegration itegration itegration itegration';
+        'channels channels channels channels channels channels channels'
+        'aiandiot aiandiot aiandiot aiandiot aiandiot aiandiot aiandiot'
+        'marketing salesandecommerce service engagement analytics appsecosystem support'
+        'platform platform platform platform platform platform platform'
+        'itegration itegration itegration itegration itegration itegration itegration';
     gap: 10px;
     padding: 5px;
 }
 
-.subcontainer{
+.subcontainer {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 5px;
     text-align: center;
@@ -35,16 +35,16 @@ h1{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px 0px;
 }
 
-.subcontainer > img{
-    height: 50px;
+.subcontainer>img {
+    height: 25px;
 }
 
-.fullwidth{
+.fullwidth {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
 }
 
-.items > div{
+.items>div {
     background-color: rgba(255, 255, 255);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 2px;
@@ -53,62 +53,79 @@ h1{
     border-radius: 3px;
 }
 
-.channels{
+.disabled {
+    text-decoration: line-through;
+    background-color: rgba(21, 21, 21, 0.5) !important;
+    border: 1px solid rgba(21, 21, 21, 0.5) !important;
+}
+
+.red {
+    background-color: red !important;
+}
+
+.amber {
+    background-color: orange !important;
+}
+
+.green {
+    background-color: green !important;
+}
+
+.items>div>p {
+    text-transform: capitalize;
+}
+
+.channels {
     grid-area: channels;
     background-color: pink;
 }
 
-.aiandiot{
+.aiandiot {
     grid-area: aiandiot;
     background-color: rgba(117, 170, 206, 0.80);
 }
 
-.marketing{
+.marketing {
     grid-area: marketing;
     background-color: rgba(230, 128, 61, 0.8);
 }
 
-.salesandecommerce{
+.salesandecommerce {
     grid-area: salesandecommerce;
     background-color: rgba(146, 231, 120, 0.8);
 }
 
-.service{
+.service {
     grid-area: service;
     background-color: rgb(216, 105, 151, 0.8);
 }
 
-.engagement{
+.engagement {
     grid-area: engagement;
     background-color: rgb(247, 247, 179, 0.8);
 }
 
-.analytics{
+.analytics {
     grid-area: analytics;
     background-color: rgb(14, 175, 175, 0.8);
 }
 
-.appsecosystem{
+.appsecosystem {
     grid-area: appsecosystem;
-    background-color: rgb(110, 24, 24, 0.8); 
+    background-color: rgb(110, 24, 24, 0.8);
 }
 
-.support{
+.support {
     grid-area: support;
     background-color: rgb(173, 7, 173, 0.8);
-} 
-
-.communitysupport{
-    grid-area: communitysupport;
-    background-color: rgb(232, 173, 255, 0.8);
 }
 
-.platform{
+.platform {
     grid-area: platform;
     background-color: rgb(83, 154, 196, 0.8);
 }
 
-.integration{
+.integration {
     grid-area: itegration;
     background-color: white;
 }

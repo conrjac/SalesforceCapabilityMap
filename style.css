@@ -18,7 +18,7 @@ h1 {
 }
 
 .header>h1 {
-    font-size: 20px;
+    font-size: 32px;
     text-align: center;
 }
 
@@ -35,11 +35,11 @@ h1 {
     display: grid;
     /* grid-template-columns: auto auto auto auto auto;*/
     grid-template-areas:
-        'channels channels channels channels channels channels channels'
-        'aiandiot aiandiot aiandiot aiandiot aiandiot aiandiot aiandiot'
-        'marketing salesandecommerce service engagement analytics appsecosystem support'
-        'platform platform platform platform platform platform platform'
-        'itegration itegration itegration itegration itegration itegration itegration';
+        'channels channels channels channels channels channels'
+        'aiandiot aiandiot aiandiot aiandiot aiandiot aiandiot'
+        'marketing sales commerce service engagement analytics'
+        'appsecosystem appsecosystem support support platform platform'
+        'itegration itegration itegration itegration itegration itegration';
     gap: 20px;
     padding: 5px;
     margin: 20px;
@@ -55,6 +55,7 @@ h1 {
 .subcontainer>h1 {
     text-align: center;
     margin-top: -40px;
+    margin-left: 1px;
 }
 
 .subcontainer>img {
@@ -118,9 +119,14 @@ h1 {
     background-color: rgba(230, 128, 61, 0.8);
 }
 
-.salesandecommerce {
-    grid-area: salesandecommerce;
+.sales {
+    grid-area: sales;
     background-color: rgba(146, 231, 120, 0.8);
+}
+
+.commerce {
+    grid-area: commerce;
+    background-color: #8a69eccc;
 }
 
 .service {

@@ -37,6 +37,7 @@ h1 {
     grid-template-areas:
         'channels channels channels channels channels channels'
         'aiandiot aiandiot aiandiot aiandiot aiandiot aiandiot'
+        'industries industries industries industries industries industries'
         'marketing sales commerce service engagement analytics'
         'appsecosystem appsecosystem support support platform platform'
         'itegration itegration itegration itegration itegration itegration';
@@ -70,10 +71,19 @@ h1 {
 
 .fullwidth {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
 }
 
-.items>div {
+.mainitem {
+    background-color: rgb(203, 182, 219);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.item {
     background-color: rgba(255, 255, 255);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 2px;
@@ -112,6 +122,11 @@ h1 {
 .aiandiot {
     grid-area: aiandiot;
     background-color: rgba(117, 170, 206, 0.80);
+}
+
+.industries {
+    grid-area: industries;
+    background-color: rgba(188, 127, 253, 0.931);
 }
 
 .marketing {

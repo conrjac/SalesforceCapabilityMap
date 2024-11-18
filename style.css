@@ -35,13 +35,13 @@ h1 {
     display: grid;
     /* grid-template-columns: auto auto auto auto auto;*/
     grid-template-areas:
-        'channels channels channels channels channels channels'
-        'aiandiot aiandiot aiandiot aiandiot aiandiot aiandiot'
-        'industries industries industries industries industries industries'
-        'marketing sales commerce service engagement analytics'
-        'appsecosystem appsecosystem support support platform platform'
-        'itegration itegration itegration itegration itegration itegration';
-    gap: 20px;
+        'channels channels channels channels channels'
+        'aiandiot aiandiot aiandiot aiandiot aiandiot'
+        'industries industries industries industries industries'
+        'marketing sales commerce service engagement'
+        'analytics analytics appsecosystem support platform'
+        'integration integration integration integration integration';
+    gap: 10px;
     padding: 5px;
     margin: 20px;
 }
@@ -63,9 +63,6 @@ h1 {
     height: 40px;
     position: relative;
     display: inline;
-    top: -20px;
-    left: -20px;
-    bottom: -40px;
     text-align: left;
 }
 
@@ -175,6 +172,6 @@ h1 {
 }
 
 .integration {
-    grid-area: itegration;
+    grid-area: integration;
     background-color: white;
 }
